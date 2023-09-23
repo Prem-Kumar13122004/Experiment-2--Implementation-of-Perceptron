@@ -108,4 +108,4 @@ plt.plot(range(1,len(classifier.misclassified_samples)+1),classifier.misclassifi
 plt.xlabel('Epoch')
 plt.ylabel('Errors')
 plt.show()
-OUTPUT
+#OUTPUT
