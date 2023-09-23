@@ -1,13 +1,13 @@
 # Experiment-2--Implementation-of-Perceptron
-##AIM:
+## AIM:
 
 To implement a perceptron for classification using Python
 
-EQUIPMENTS REQUIRED:
+# EQUIPMENTS REQUIRED:
 Hardware – PCs
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
-RELATED THEORETICAL CONCEPT:
+# RELATED THEORETICAL CONCEPT:
 A Perceptron is a basic learning algorithm invented in 1959 by Frank Rosenblatt. It is meant to mimic the working logic of a biological neuron. The human brain is basically a collection of many interconnected neurons. Each one receives a set of inputs, applies some sort of computation on them and propagates the result to other neurons.
 A Perceptron is an algorithm used for supervised learning of binary classifiers.Given a sample, the neuron classifies it by assigning a weight to its features. To accomplish this a Perceptron undergoes two phases: training and testing. During training phase weights are initialized to an arbitrary value. Perceptron is then asked to evaluate a sample and compare its decision with the actual class of the sample.If the algorithm chose the wrong class weights are adjusted to better match that particular sample. This process is repeated over and over to finely optimize the biases. After that, the algorithm is ready to be tested against a new set of completely unknown samples to evaluate if the trained model is general enough to cope with real-world samples.
 The important Key points to be focused to implement a perceptron:
@@ -23,7 +23,7 @@ A threshold function, usually Heaviside or sign functions, maps the scalar value
 Indeed if the neuron output is exactly zero it cannot be assumed that the sample belongs to the first sample since it lies on the boundary between the two classes. Nonetheless for the sake of simplicity,ignore this situation.
 
 
-ALGORITHM:
+# ALGORITHM:
 Importing the libraries
 Importing the dataset
 Plot the data to verify the linear separable dataset and consider only two classes
@@ -42,7 +42,8 @@ Plot the error for each iteration
 Print the accuracy
 
 
- PROGRAM:
+ # PROGRAM:
+ ~~~
  import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -108,4 +109,15 @@ plt.plot(range(1,len(classifier.misclassified_samples)+1),classifier.misclassifi
 plt.xlabel('Epoch')
 plt.ylabel('Errors')
 plt.show()
-#OUTPUT
+~~~
+# OUTPUT
+# data set
+![Screenshot 2023-09-23 140934](https://github.com/Prem-Kumar13122004/Experiment-2--Implementation-of-Perceptron/assets/119291590/10a63678-6950-41e8-9110-ee7bd5bf952f)
+# scatter plot
+![Screenshot 2023-09-23 141057](https://github.com/Prem-Kumar13122004/Experiment-2--Implementation-of-Perceptron/assets/119291590/4528d082-1446-47c6-a3bb-8b6edb7f2781)
+# Error plot
+![Screenshot 2023-09-23 141211](https://github.com/Prem-Kumar13122004/Experiment-2--Implementation-of-Perceptron/assets/119291590/abd5e74a-5f6d-4357-abb6-078b68e2fa62)
+
+
+
+
